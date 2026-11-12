@@ -1,3 +1,12 @@
+:root {
+    --width-150-px: 150px;
+    --height-auto: auto;
+    --text-align-center: center;
+    --box-shadow-gray: 0 0 30px gray;
+    --border-black: 1px solid #000;
+    --border-rgb: 1px solid rgb(0 0 0 /0.2);
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -14,11 +23,11 @@ h1 {
 }
 
 img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
+    width: var(--width-150-px);
+    height: var(--height-auto);
+    border: var(--border-black);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow-gray);
 }
 
 main {
@@ -28,24 +37,24 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
+    border: var(--border-rgb);
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--text-align-center);
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height-auto);
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid rgb(0 0 0 /0.2);
+    width: var(--width-150-px);
+    height: var(--height-auto);
+    border: var(--border-rgb);
     padding: .5rem;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow-gray);
 
 }
 
@@ -55,6 +64,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    border-top: var(--border-black);
+    text-align: var(--text-align-center);
 }
