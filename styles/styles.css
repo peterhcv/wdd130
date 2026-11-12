@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --width-150-px: 150px;
     --height-auto: auto;
@@ -7,8 +13,13 @@
     --border-rgb: 1px solid rgb(0 0 0 /0.2);
 }
 
+body {
+    font-size: 16px;
+    font-family: Roboto, arial, sans-serif;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: #1757c6;
     padding: 10px;
 }
 
@@ -60,10 +71,47 @@ main img {
 
 p {
     padding: 0;
+    margin: 1rem;
 }
 
 footer {
     margin-top: 15px;
     border-top: var(--border-black);
     text-align: var(--text-align-center);
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+main img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
+}
+
+.indent {
+    padding-left: 2rem;
 }
