@@ -3,6 +3,9 @@
     --secondary-color: #3a3836;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
+    --white-color: #ffffff;
+    --heading-overlay: #3a3836b3;
+    --hero-overlay: #264653b3;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     padding: 8px 16px;
 }
 
@@ -56,7 +59,7 @@ header nav ul {
 header nav a {
     display: inline-block;
     padding: 8px 12px;
-    background-color: #fff;
+    background-color: var(--white-color);
     color: var(--accent1-color);
     text-decoration: none;
 }
@@ -100,9 +103,8 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: var(--heading-overlay);
+    color: var(--white-color);
 }
 
 .hero article {
@@ -110,9 +112,9 @@ h1 {
     top: 240px;
     left: 20px;
     right: 20px;
-    background-color: rgba(38, 70, 83, 0.7);
+    background-color: var(--hero-overlay);
     padding: 10px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .hero article img {
